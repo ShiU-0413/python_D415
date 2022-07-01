@@ -19,7 +19,7 @@ depth_ts = []
 
 # Realsense の起動・設定
 config = rs.config()
-config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 6)
+config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 60)
 config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 90)
 pipeline = rs.pipeline()
 profile = pipeline.start(config)
